@@ -37,12 +37,13 @@
   gAPPLEPkgTokenSpaceGuid.PcdInitializeRamdisk|TRUE|BOOLEAN|0x00003902
   # Simple FrameBuffer
   gEfiMdeModulePkgTokenSpaceGuid.PcdEmuVariableNvModeEnable|TRUE|BOOLEAN|1
-  gAPPLEPkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0x80400000|UINT32|0x0000a400 # 0x7C400000
+  gAPPLEPkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0x5f700000|UINT32|0x0000a400 # 0x7C400000
   gAPPLEPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|480|UINT32|0x0000a401
   gAPPLEPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|854|UINT32|0x0000a402
   gAPPLEPkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp|32|UINT32|0x0000a403
   gAPPLEPkgTokenSpaceGuid.PcdMipiFrameBufferVisibleWidth|480|UINT32|0x0000a404
   gAPPLEPkgTokenSpaceGuid.PcdMipiFrameBufferVisibleHeight|854|UINT32|0x0000a405 
+  
   gArmPlatformTokenSpaceGuid.PcdSystemMemoryUefiRegionSize|0x08000000|UINT32|0x00000036 #0x00800000
   gArmPlatformTokenSpaceGuid.PcdCPUCorePrimaryStackSize|0x10000|UINT32|0x00000038
   gArmPlatformTokenSpaceGuid.PcdCPUCoreSecondaryStackSize|0x10000|UINT32|0x00000039

@@ -101,4 +101,4 @@ _NeverReturn:
 
 .align 3
 dead:  
-  b dead 
+  b dead

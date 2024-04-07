@@ -24,7 +24,7 @@
   SUPPORTED_ARCHITECTURES        = ARM
   BUILD_TARGETS                  = DEBUG|RELEASE
   SKUID_IDENTIFIER               = DEFAULT
-  FLASH_DEFINITION               = APPLEPkg/APPLEPkg.fdf
+
   DEFINE USE_SCREEN_FOR_SERIAL_OUTPUT = 1
 
 !include APPLEPkg/CommonDsc.dsc.inc

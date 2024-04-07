@@ -40,17 +40,6 @@ STATIC VOID UartInit(VOID)
        (CHAR16 *)PcdGetPtr(PcdFirmwareVersionString), __TIME__, __DATE__));
 }
 
-STATIC VOID FramebufferRemap(VOID)
-{
-  /* Clear screen at new FB address */ 
-  UINT8 *base = (UINT8 *)0x80400000ull;
-  for (UINTN i = 0; i < 0x00800000; i++) {
-    base[i] = 0;
-  }
-  //Remap our framebuffer
-  MmioWrite32(0x3A100000 + 0x4044, 0x80400000);
-}
-
 VOID Main(IN VOID *StackBase, IN UINTN StackSize)
 {
 
@@ -70,8 +59,8 @@ VOID Main(IN VOID *StackBase, IN UINTN StackSize)
   ArmEnableBranchPrediction();
 
   ArmSetAuxCrBit(1);
-  
-  FramebufferRemap();
+
+  // FramebufferRemap();
   // Initialize (fake) UART.
   UartInit();
 

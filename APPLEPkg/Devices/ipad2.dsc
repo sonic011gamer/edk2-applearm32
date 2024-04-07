@@ -22,7 +22,6 @@
 
   gArmTokenSpaceGuid.PcdCpuVectorBaseAddress|0x80C40000
 
-
   # Framebuffer (720x1280)
   gAPPLEPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1024
   gAPPLEPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|768
